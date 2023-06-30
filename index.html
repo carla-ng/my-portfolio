@@ -2,16 +2,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Component Portfolio</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
-    <h1>Components Inventory</h1>
+    <div id="components">
+        <h1>Components Inventory</h1>
 
-    <div>
-        <h3>Component Cards</h3>
-        <p>An example of a component.</p>
-        <img src="img/cmp-cards01.png" alt="Cards">
+        <p>
+            A <b>component</b> is a reusable building block that encapsulates a set of related functionality, data, and user interface elements.
+        </p>
+        <p>
+            It can have different <b>variants</b>, meaning that it can have different styles and functionalities that are specifically made for that variant.
+        </p>
+        <p>
+            Components can be made up of many other smaller components as well.
+        </p>
+
+        <br><br>
+
+
+        <div class="component-container">
+            <h2 class="component-container__title">Component: Cards</h2>
+            <p class="component-container__text">Used to list different kinds of news and content.</p>
+    
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Grid</h4>
+                <img class="component-container__variant-image vertical" src="img/cmp-cards01.png" alt="Cards Grid">
+            </div>
+
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Fashion Block</h4>
+                <p class="component-container__variant-text">This example also includes a Headline Component (with a Link Component) on top.</p>
+                <img class="component-container__variant-image horizontal" src="img/cmp-cards02.png" alt="Cards Fashion Block">
+            </div>
+
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Cover</h4>
+                <p class="component-container__variant-text">The Cards Component can also be used to download content.</p>
+                <img class="component-container__variant-image horizontal" src="img/cmp-cards03.png" alt="Cards Cover">
+            </div>
+
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Cover</h4>
+                <img class="component-container__variant-image horizontal" src="img/cmp-cards04.png" alt="Cards Cover">
+            </div>
+
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Cover</h4>
+                <img class="component-container__variant-image horizontal" src="img/cmp-cards05.png" alt="Cards Cover">
+            </div>
+
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Cover Featured</h4>
+                <img class="component-container__variant-image vertical" src="img/cmp-cards06.png" alt="Cards Cover Featured">
+            </div>
+
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Cover Featured</h4>
+                <img class="component-container__variant-image horizontal" src="img/cmp-cards07.png" alt="Cards Cover Featured">
+            </div>
+
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Inline</h4>
+                <img class="component-container__variant-image horizontal" src="img/cmp-cards08.png" alt="Cards Inline">
+            </div>
+
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Inline</h4>
+                <img class="component-container__variant-image vertical" src="img/cmp-cards09.png" alt="Cards Inline">
+            </div>
+
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Block</h4>
+                <img class="component-container__variant-image vertical" src="img/cmp-cards12.png" alt="Cards Block">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="component-container">
+            <h2 class="component-container__title">Component: Audio Player</h2>
+            <p class="component-container__text">Used to play audio files.</p>
+    
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Default</h4>
+                <img class="component-container__variant-image horizontal" src="img/cmp-audio-player_default01.png" alt="Audio Player Default">
+            </div>
+
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Lite</h4>
+                <img class="component-container__variant-image small-horizontal" src="img/cmp-audio-player_lite01.png" alt="Audio Player Lite">
+                <img class="component-container__variant-image small-horizontal" src="img/cmp-audio-player_lite02.png" alt="Audio Player Lite">
+            </div>
+
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Card</h4>
+                <img class="component-container__variant-image horizontal" src="img/cmp-audio-player_card01.png" alt="Audio Player Card">
+                <img class="component-container__variant-image horizontal" src="img/cmp-audio-player_card02.png" alt="Audio Player Card">
+                <img class="component-container__variant-image horizontal" src="img/cmp-audio-player_card03.png" alt="Audio Player Card">
+            </div>
+
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Advance</h4>
+                <img class="component-container__variant-image horizontal" src="img/cmp-audio-player_advance01.png" alt="Audio Player Advance">
+                <p class="component-container__variant-text">Audio sleep timer popup:</p>
+                <img class="component-container__variant-image horizontal" src="img/cmp-audio-player_advance02.png" alt="Audio Player Advance">
+                <p class="component-container__variant-text">Audio speed popup:</p>
+                <img class="component-container__variant-image horizontal" src="img/cmp-audio-player_advance03.png" alt="Audio Player Advance">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="component-container">
+            <h2 class="component-container__title">Component: Board</h2>
+            <p class="component-container__text">Used to show information about sport matches.</p>
+    
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Default</h4>
+                <img class="component-container__variant-image horizontal" src="img/cmp-board_default01.png" alt="Board Default">
+            </div>
+
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Featured</h4>
+                <img class="component-container__variant-image horizontal" src="img/cmp-board_featured01.png" alt="Board Featured">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="component-container">
+            <h2 class="component-container__title">Component: Content</h2>
+            <p class="component-container__text">Used to show news.</p>
+
+            <div class="component-container__variant">
+                <h4 class="component-container__variant-title">Variant: Default</h4>
+                <img class="component-container__variant-image horizontal" src="img/cmp-content-new_default01.png" alt="Content Default">
+            </div>
+        </div>
+
+        <hr>
+
+
     </div>
 
 </body>

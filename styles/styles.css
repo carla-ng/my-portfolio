@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Nunito&display=swap");
+body #components {
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0 12px;
+}
+body #components h1 {
+  font-family: "Merriweather Sans", sans-serif;
+  margin-bottom: 50px;
+  text-align: center;
+}
+body #components p {
+  font-family: "Nunito", sans-serif;
+}
+body #components hr {
+  margin: 40px 0;
+}
+body #components .component-container {
+  margin-top: 10px;
+}
+body #components .component-container h2.component-container__title {
+  font-family: "Merriweather Sans", sans-serif;
+  text-align: center;
+}
+body #components .component-container p.component-container__text {
+  font-family: "Nunito", sans-serif;
+}
+body #components .component-container .component-container__variant {
+  margin-top: 40px;
+}
+body #components .component-container .component-container__variant h4.component-container__variant-title {
+  font-family: "Merriweather Sans", sans-serif;
+}
+body #components .component-container .component-container__variant p.component-container__variant-text {
+  font-family: "Nunito", sans-serif;
+}
+body #components .component-container .component-container__variant img.component-container__variant-image {
+  display: block;
+  margin: 12px 0;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  body #components .component-container .component-container__variant img.component-container__variant-image {
+    margin: 12px auto;
+  }
+  body #components .component-container .component-container__variant img.component-container__variant-image.small-horizontal {
+    max-width: 200px;
+  }
+  body #components .component-container .component-container__variant img.component-container__variant-image.vertical {
+    max-width: 350px;
+  }
+}
+@media (min-width: 992px) {
+  body #components .component-container .component-container__variant img.component-container__variant-image.small-horizontal {
+    width: 35%;
+  }
+  body #components .component-container .component-container__variant img.component-container__variant-image.vertical {
+    width: 45%;
+  }
+  body #components .component-container .component-container__variant img.component-container__variant-image.horizontal {
+    width: 80%;
+  }
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Nunito&display=swap');
+
+
+body {
+
+    #components {
+        margin: 40px auto;
+        max-width: 1200px;
+        padding: 0 12px;
+        
+        h1 {
+            font-family: 'Merriweather Sans', sans-serif;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        p {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        hr {
+            margin: 40px 0;
+        }
+
+        .component-container {
+            margin-top: 10px;
+            
+            h2.component-container__title {
+                font-family: 'Merriweather Sans', sans-serif;
+                text-align: center;
+            }
+            p.component-container__text {
+                font-family: 'Nunito', sans-serif;
+            }
+
+            .component-container__variant {
+                margin-top: 40px;
+
+                h4.component-container__variant-title {
+                    font-family: 'Merriweather Sans', sans-serif;
+                }
+
+                p.component-container__variant-text {
+                    font-family: 'Nunito', sans-serif;
+                }
+
+                img.component-container__variant-image {
+                    display: block;
+                    margin: 12px 0;
+                    width: 100%;
+
+                    @media (max-width: 991px) {
+                        margin: 12px auto;
+                        &.small-horizontal { max-width: 200px; }
+                        &.vertical { max-width: 350px; }
+                    }
+
+                    @media (min-width: 992px) {
+                        &.small-horizontal { width: 35%; }
+                        &.vertical { width: 45%; }
+                        &.horizontal { width: 80%; }
+                    }
+                }
+            }
+        }
+    }
+}

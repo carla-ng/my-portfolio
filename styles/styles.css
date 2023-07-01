@@ -33,6 +33,7 @@ body #components .component-container .component-container__variant h4.component
 }
 body #components .component-container .component-container__variant p.component-container__variant-text {
   font-family: "Nunito", sans-serif;
+  margin-top: 30px;
 }
 body #components .component-container .component-container__variant img.component-container__variant-image {
   display: block;

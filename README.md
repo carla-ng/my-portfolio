@@ -1,5 +1,5 @@
 # My Portfolio
-Components developed professionally.
+Components developed professionally with HTML, SCSS and JavaScript + jQuery.
 
 <br/>
 

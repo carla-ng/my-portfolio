@@ -1,64 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Nunito&display=swap");
-body #components {
+body #components, body #websites {
   margin: 40px auto;
   max-width: 1200px;
   padding: 0 12px;
 }
-body #components h1 {
+body #components h1, body #websites h1 {
   font-family: "Merriweather Sans", sans-serif;
   margin-bottom: 50px;
   text-align: center;
 }
-body #components p {
+body #components p, body #websites p {
   font-family: "Nunito", sans-serif;
 }
-body #components hr {
+body #components hr, body #websites hr {
   margin: 40px 0;
 }
-body #components .component-container {
+body #components .component-container, body #components .website-section-container, body #websites .component-container, body #websites .website-section-container {
   margin-top: 10px;
 }
-body #components .component-container h2.component-container__title {
+body #components .component-container h2.component-container__title, body #components .website-section-container h2.component-container__title, body #websites .component-container h2.component-container__title, body #websites .website-section-container h2.component-container__title {
   font-family: "Merriweather Sans", sans-serif;
   text-align: center;
 }
-body #components .component-container p.component-container__text {
+body #components .component-container p.component-container__text, body #components .website-section-container p.component-container__text, body #websites .component-container p.component-container__text, body #websites .website-section-container p.component-container__text {
   font-family: "Nunito", sans-serif;
 }
-body #components .component-container .component-container__variant {
+body #components .component-container .component-container__variant, body #components .website-section-container .component-container__variant, body #websites .component-container .component-container__variant, body #websites .website-section-container .component-container__variant {
   margin-top: 40px;
 }
-body #components .component-container .component-container__variant h4.component-container__variant-title {
+body #components .component-container .component-container__variant h4.component-container__variant-title, body #components .website-section-container .component-container__variant h4.component-container__variant-title, body #websites .component-container .component-container__variant h4.component-container__variant-title, body #websites .website-section-container .component-container__variant h4.component-container__variant-title {
   font-family: "Merriweather Sans", sans-serif;
 }
-body #components .component-container .component-container__variant p.component-container__variant-text {
+body #components .component-container .component-container__variant p.component-container__variant-text, body #components .website-section-container .component-container__variant p.component-container__variant-text, body #websites .component-container .component-container__variant p.component-container__variant-text, body #websites .website-section-container .component-container__variant p.component-container__variant-text {
   font-family: "Nunito", sans-serif;
   margin-top: 30px;
 }
-body #components .component-container .component-container__variant img.component-container__variant-image {
+body #components .component-container img.component-container__variant-image, body #components .component-container img.website-section-container__image, body #components .website-section-container img.component-container__variant-image, body #components .website-section-container img.website-section-container__image, body #websites .component-container img.component-container__variant-image, body #websites .component-container img.website-section-container__image, body #websites .website-section-container img.component-container__variant-image, body #websites .website-section-container img.website-section-container__image {
   display: block;
   margin: 12px 0;
   width: 100%;
 }
 @media (max-width: 991px) {
-  body #components .component-container .component-container__variant img.component-container__variant-image {
+  body #components .component-container img.component-container__variant-image, body #components .component-container img.website-section-container__image, body #components .website-section-container img.component-container__variant-image, body #components .website-section-container img.website-section-container__image, body #websites .component-container img.component-container__variant-image, body #websites .component-container img.website-section-container__image, body #websites .website-section-container img.component-container__variant-image, body #websites .website-section-container img.website-section-container__image {
     margin: 12px auto;
   }
-  body #components .component-container .component-container__variant img.component-container__variant-image.small-horizontal {
+  body #components .component-container img.component-container__variant-image.small-horizontal, body #components .component-container img.website-section-container__image.small-horizontal, body #components .website-section-container img.component-container__variant-image.small-horizontal, body #components .website-section-container img.website-section-container__image.small-horizontal, body #websites .component-container img.component-container__variant-image.small-horizontal, body #websites .component-container img.website-section-container__image.small-horizontal, body #websites .website-section-container img.component-container__variant-image.small-horizontal, body #websites .website-section-container img.website-section-container__image.small-horizontal {
     max-width: 200px;
   }
-  body #components .component-container .component-container__variant img.component-container__variant-image.vertical {
+  body #components .component-container img.component-container__variant-image.vertical, body #components .component-container img.website-section-container__image.vertical, body #components .website-section-container img.component-container__variant-image.vertical, body #components .website-section-container img.website-section-container__image.vertical, body #websites .component-container img.component-container__variant-image.vertical, body #websites .component-container img.website-section-container__image.vertical, body #websites .website-section-container img.component-container__variant-image.vertical, body #websites .website-section-container img.website-section-container__image.vertical {
     max-width: 350px;
   }
 }
 @media (min-width: 992px) {
-  body #components .component-container .component-container__variant img.component-container__variant-image.small-horizontal {
+  body #components .component-container img.component-container__variant-image.small-horizontal, body #components .component-container img.website-section-container__image.small-horizontal, body #components .website-section-container img.component-container__variant-image.small-horizontal, body #components .website-section-container img.website-section-container__image.small-horizontal, body #websites .component-container img.component-container__variant-image.small-horizontal, body #websites .component-container img.website-section-container__image.small-horizontal, body #websites .website-section-container img.component-container__variant-image.small-horizontal, body #websites .website-section-container img.website-section-container__image.small-horizontal {
     width: 35%;
   }
-  body #components .component-container .component-container__variant img.component-container__variant-image.vertical {
+  body #components .component-container img.component-container__variant-image.vertical, body #components .component-container img.website-section-container__image.vertical, body #components .website-section-container img.component-container__variant-image.vertical, body #components .website-section-container img.website-section-container__image.vertical, body #websites .component-container img.component-container__variant-image.vertical, body #websites .component-container img.website-section-container__image.vertical, body #websites .website-section-container img.component-container__variant-image.vertical, body #websites .website-section-container img.website-section-container__image.vertical {
     width: 45%;
   }
-  body #components .component-container .component-container__variant img.component-container__variant-image.horizontal {
+  body #components .component-container img.component-container__variant-image.horizontal, body #components .component-container img.website-section-container__image.horizontal, body #components .website-section-container img.component-container__variant-image.horizontal, body #components .website-section-container img.website-section-container__image.horizontal, body #websites .component-container img.component-container__variant-image.horizontal, body #websites .component-container img.website-section-container__image.horizontal, body #websites .website-section-container img.component-container__variant-image.horizontal, body #websites .website-section-container img.website-section-container__image.horizontal {
     width: 80%;
   }
 }

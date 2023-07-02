@@ -1,5 +1,5 @@
 # My Portfolio
-Some components developed professionally.
+Components developed professionally.
 
 <br/>
 

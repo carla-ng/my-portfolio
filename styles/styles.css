@@ -1,8 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Nunito&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+}
+@media (max-width: 992px) {
+  body {
+    flex-direction: column;
+  }
+}
+body #navbar {
+  background-color: rgb(109, 109, 248);
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  padding: 30px 50px;
+  position: fixed;
+  top: 0;
+  width: 18%;
+}
+body #navbar .navbar-logo {
+  color: #fff;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+@media (min-width: 991px) {
+  body #navbar #hamburger-btn {
+    display: none;
+  }
+}
+body #navbar .collapse {
+  padding: 20px 20px 40px 20px;
+}
+body #navbar .collapse ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body #navbar .collapse ul li {
+  padding: 6px 0;
+}
+body #navbar .collapse ul li a {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+body #main {
+  margin-left: 26%;
+}
 body #components, body #websites {
+  display: block;
   margin: 40px auto;
   max-width: 1200px;
-  padding: 0 12px;
+  padding: 20px 12px;
 }
 body #components h1, body #websites h1 {
   font-family: "Merriweather Sans", sans-serif;
@@ -16,7 +78,7 @@ body #components hr, body #websites hr {
   margin: 40px 0;
 }
 body #components .component-container, body #components .website-section-container, body #websites .component-container, body #websites .website-section-container {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 body #components .component-container h2.component-container__title, body #components .website-section-container h2.component-container__title, body #websites .component-container h2.component-container__title, body #websites .website-section-container h2.component-container__title {
   font-family: "Merriweather Sans", sans-serif;

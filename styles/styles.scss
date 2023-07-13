@@ -1,12 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Nunito&display=swap');
 
 
+$breakpoint-min-width: 991px;
+$breakpoint-max-width: 992px;
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    display: flex;
+    @media (max-width: $breakpoint-max-width) {
+        flex-direction: column;
+    }
+
+    #navbar {
+        background-color: rgb(109, 109, 248);
+        height: 100%;
+        left: 0;
+        overflow: auto;
+        padding: 30px 50px;
+        position: fixed;
+        top: 0;
+        width: 18%;
+
+        .navbar-logo {
+            color: #fff;
+            font-family: 'Merriweather Sans', sans-serif;
+            font-size: 1.3rem;
+            text-align: center;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        #hamburger-btn {
+            @media (min-width: $breakpoint-min-width) {
+                display: none;
+            }
+        }
+
+        .collapse {
+            padding: 20px 20px 40px 20px;
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    padding: 6px 0;
+
+                    a {
+                        color: #fff;
+                        font-family: 'Nunito', sans-serif;
+                        font-size: 1rem;
+                        text-decoration: none;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+
+    #main {
+        margin-left: 26%;
+    }
 
     #components, #websites {
+        display: block;
         margin: 40px auto;
         max-width: 1200px;
-        padding: 0 12px;
+        padding: 20px 12px;
         
         h1 {
             font-family: 'Merriweather Sans', sans-serif;
@@ -19,7 +89,7 @@ body {
         hr { margin: 40px 0; }
 
         .component-container, .website-section-container {
-            margin-top: 10px;
+            margin-top: 20px;
             
             h2.component-container__title {
                 font-family: 'Merriweather Sans', sans-serif;
@@ -47,13 +117,13 @@ body {
                 margin: 12px 0;
                 width: 100%;
 
-                @media (max-width: 991px) {
+                @media (max-width: $breakpoint-min-width) {
                     margin: 12px auto;
                     &.small-horizontal { max-width: 200px; }
                     &.vertical { max-width: 350px; }
                 }
 
-                @media (min-width: 992px) {
+                @media (min-width: $breakpoint-max-width) {
                     &.small-horizontal { width: 35%; }
                     &.vertical { width: 45%; }
                     &.horizontal { width: 80%; }

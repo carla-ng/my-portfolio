@@ -5,38 +5,40 @@
     <title>Component Portfolio</title>
 
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="/js/index.js"></script>
 </head>
 
 <body>
 
     <nav id="navbar">
-        <a class="navbar-logo" href="#">Components Portfolio</a>
+        <div class="navbar__inner-container">
+            <div class="navbar__main">
+                <a class="navbar__logo" href="#">Components Portfolio</a>
+                <button id="navbar-hamburger">&#9776;</button>
+            </div>
 
-        <button id="hamburger-btn">&#9776;</button>
-
-        <div class="collapse">
-            <ul>
-                <li><a href="#component-cards">Cards</a></li>
-                <li><a href="#component-audio-player">Audio Player</a></li>
-                <li><a href="#component-board">Board</a></li>
-                <li><a href="#component-content">Content</a></li>
-                <li><a href="#component-deepar">DeepAR</a></li>
-                <li><a href="#component-filters">Filters</a></li>
-                <li><a href="#component-form">Form</a></li>
-                <li><a href="#component-header">Header</a></li>
-                <li><a href="#component-hero">Hero</a></li>
-                <li><a href="#component-meme-generator">Meme Generator</a></li>
-                <li><a href="#component-player">Player</a></li>
-                <li><a href="#component-popup-box">PopUp Box</a></li>
-                <li><a href="#component-product-card">Product Card</a></li>
-                <li><a href="#component-profile">Profile</a></li>
-                <li><a href="#component-quiz">Quiz</a></li>
-                <li><a href="#component-search">Search</a></li>
-                <li><a href="#component-table">Table</a></li>
-                <li><a href="#component-timeline">Timeline</a></li>
-                <li><a href="#websites">Bonus: Website Examples</a></li>
-            </ul>
+            <div class="navbar__menu">
+                <ul>
+                    <li><a href="#component-cards">Cards</a></li>
+                    <li><a href="#component-audio-player">Audio Player</a></li>
+                    <li><a href="#component-board">Board</a></li>
+                    <li><a href="#component-content">Content</a></li>
+                    <li><a href="#component-deepar">DeepAR</a></li>
+                    <li><a href="#component-filters">Filters</a></li>
+                    <li><a href="#component-form">Form</a></li>
+                    <li><a href="#component-header">Header</a></li>
+                    <li><a href="#component-hero">Hero</a></li>
+                    <li><a href="#component-meme-generator">Meme Generator</a></li>
+                    <li><a href="#component-player">Player</a></li>
+                    <li><a href="#component-popup-box">PopUp Box</a></li>
+                    <li><a href="#component-product-card">Product Card</a></li>
+                    <li><a href="#component-profile">Profile</a></li>
+                    <li><a href="#component-quiz">Quiz</a></li>
+                    <li><a href="#component-search">Search</a></li>
+                    <li><a href="#component-table">Table</a></li>
+                    <li><a href="#component-timeline">Timeline</a></li>
+                    <li><a href="#websites">Bonus: Website Examples</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -460,6 +462,8 @@
             </div>
         </section>
     </div>
+
+    <script src="js/index.js"></script>
 
 </body>
 </html>

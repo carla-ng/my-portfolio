@@ -22,20 +22,17 @@ body {
 
     #navbar {
         background-color: rgb(109, 109, 248);
+        left: 0;
         overflow: hidden;
-        //padding: 25px 0;
         position: fixed;
         scrollbar-width: none;
-        transition: transform 0.3s ease;
-        //width: 100%;
-        z-index: 2;
-  
-        left: 0;
         top: 0;
+        transition: transform 0.3s ease;
+        z-index: 2;
 
         &.open {
             bottom: 0;
-            padding: 25px 0;
+            padding: 25px 0 0 0;
             right: 0;
             width: 100%;
 
@@ -45,7 +42,6 @@ body {
 
                     .navbar__main {
                         flex-direction: column;
-                        //padding: 0 25px;
 
                         .navbar__logo {
                             display: block;
@@ -53,7 +49,6 @@ body {
                         }
     
                         #navbar-hamburger {
-                            //margin-right: 20px;
                             order: 1;
                             top: 5px;
                             left: 12px;
@@ -70,7 +65,6 @@ body {
 
         @media (max-width: $breakpoint-max-width) {
             &:not(.open) {
-                //padding: 0;
                 border-radius: 50%;
                 height: 95px;
                 margin-left: -40px;
@@ -81,7 +75,6 @@ body {
                     .navbar__main {
                         #navbar-hamburger {
                             bottom: 18px;
-                            //position: absolute;
                             right: 22px;
                         }
                     }
@@ -117,8 +110,6 @@ body {
 
             .navbar__main {
                 display: flex;
-                //align-items: center;
-                //padding: 0 25px;
 
                 @media (min-width: $breakpoint-min-width) {
                     padding: 0 25px;
@@ -145,8 +136,6 @@ body {
                     text-align: center;
 
                     @media (max-width: $breakpoint-max-width) {
-                        //margin-right: 12px;
-                        //order: 1;
                         position: absolute;
                     }
     
@@ -203,7 +192,6 @@ body {
     }
 
     #main {
-        //@media (max-width: $breakpoint-max-width) { margin-top: 60px; }
         @media (min-width: $breakpoint-min-width) { margin-left: 26%; }
     }
 

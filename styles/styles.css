@@ -18,17 +18,17 @@ body {
 }
 body #navbar {
   background-color: rgb(109, 109, 248);
+  left: 0;
   overflow: hidden;
   position: fixed;
   scrollbar-width: none;
+  top: 0;
   transition: transform 0.3s ease;
   z-index: 2;
-  left: 0;
-  top: 0;
 }
 body #navbar.open {
   bottom: 0;
-  padding: 25px 0;
+  padding: 25px 0 0 0;
   right: 0;
   width: 100%;
 }

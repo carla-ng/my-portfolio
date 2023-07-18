@@ -92,6 +92,7 @@ body {
 
         .navbar__inner-container {
             height: 100%;
+            overflow-x: hidden;
             overflow-y: scroll;
 
             @media (max-width: $breakpoint-max-width) {

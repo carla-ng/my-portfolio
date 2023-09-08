@@ -6,7 +6,7 @@ Examples of my professional work.
 ## Web Components
 Reusable components developed to create multiple websites.
 <br><br>
-**Tools:** HTML, SCSS, JavaScript, jQuery
+**Tools:** HTML, SCSS, JavaScript, jQuery, PHP, MySQL
 <br><br>
 https://carla-ng.github.io/my-portfolio/
 

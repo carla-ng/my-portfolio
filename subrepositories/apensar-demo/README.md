@@ -21,4 +21,4 @@ Short web version of the official game [Apensar](https://play.google.com/store/a
 <br>
 
 ## :globe_with_meridians: Portfolio
-URL coming soon
+[https://carla-ng.github.io/my-portfolio/subrepositories/components/apensar-demo.html](https://carla-ng.github.io/my-portfolio/subrepositories/components/apensar-demo.html)

@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Nunito&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+}
+@media (max-width: 992px) {
+  body {
+    flex-direction: column;
+  }
+}
+body #navbar {
+  display: none;
+  background-color: rgb(109, 109, 248);
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  scrollbar-width: none;
+  top: 0;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+body #navbar.open {
+  bottom: 0;
+  padding: 25px 0 0 0;
+  right: 0;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  body #navbar.open .navbar__inner-container {
+    flex-direction: column;
+  }
+  body #navbar.open .navbar__inner-container .navbar__main {
+    flex-direction: column;
+  }
+  body #navbar.open .navbar__inner-container .navbar__main .navbar__logo {
+    display: block;
+    order: 2;
+  }
+  body #navbar.open .navbar__inner-container .navbar__main #navbar-hamburger {
+    order: 1;
+    top: 5px;
+    left: 12px;
+  }
+  body #navbar.open .navbar__inner-container .navbar__menu {
+    display: block;
+    order: 3;
+  }
+}
+@media (max-width: 992px) {
+  body #navbar:not(.open) {
+    border-radius: 50%;
+    height: 95px;
+    margin-left: -40px;
+    margin-top: -40px;
+    width: 95px;
+  }
+  body #navbar:not(.open) .navbar__inner-container .navbar__main #navbar-hamburger {
+    bottom: 18px;
+    right: 22px;
+  }
+}
+@media (min-width: 991px) {
+  body #navbar {
+    bottom: 0;
+    height: 100%;
+    padding: 30px 0 30px 30px;
+    right: 0;
+    width: 21%;
+  }
+}
+body #navbar .navbar__inner-container {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+@media (max-width: 992px) {
+  body #navbar .navbar__inner-container {
+    display: flex;
+  }
+}
+@media (min-width: 991px) {
+  body #navbar .navbar__inner-container {
+    margin-right: -17px;
+    padding-right: 17px;
+  }
+}
+body #navbar .navbar__inner-container::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+body #navbar .navbar__inner-container .navbar__main {
+  display: flex;
+}
+@media (min-width: 991px) {
+  body #navbar .navbar__inner-container .navbar__main {
+    padding: 0 25px;
+  }
+}
+body #navbar .navbar__inner-container .navbar__main .navbar__logo {
+  color: #fff;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+@media (max-width: 992px) {
+  body #navbar .navbar__inner-container .navbar__main .navbar__logo {
+    display: none;
+  }
+}
+body #navbar .navbar__inner-container .navbar__main #navbar-hamburger {
+  all: initial;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  body #navbar .navbar__inner-container .navbar__main #navbar-hamburger {
+    position: absolute;
+  }
+}
+@media (min-width: 991px) {
+  body #navbar .navbar__inner-container .navbar__main #navbar-hamburger {
+    display: none;
+  }
+}
+body #navbar .navbar__inner-container .navbar__menu {
+  padding: 20px 0;
+}
+@media (max-width: 992px) {
+  body #navbar .navbar__inner-container .navbar__menu {
+    display: none;
+  }
+}
+body #navbar .navbar__inner-container .navbar__menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body #navbar .navbar__inner-container .navbar__menu ul li {
+  width: 100%;
+}
+body #navbar .navbar__inner-container .navbar__menu ul li a {
+  color: #fff;
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  padding: 10px 50px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  white-space: nowrap;
+  width: 100%;
+}
+body #navbar .navbar__inner-container .navbar__menu ul li.active {
+  background-color: #fff;
+  font-weight: 600;
+}
+body #navbar .navbar__inner-container .navbar__menu ul li.active a {
+  color: rgb(109, 109, 248);
+}
+@media (min-width: 991px) {
+  body #navbar .navbar__inner-container .navbar__menu ul li.active {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+}
+@media (min-width: 991px) {
+  body #main {
+    margin-left: 26%;
+  }
+}
+body #components, body #websites {
+  display: block;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 20px 12px;
+  z-index: 1;
+}
+body #components h1, body #websites h1 {
+  font-family: "Merriweather Sans", sans-serif;
+  margin-bottom: 50px;
+  text-align: center;
+}
+body #components p, body #websites p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+}
+body #components hr, body #websites hr {
+  margin: 40px 0;
+}
+body #components .component-container, body #components .website-section-container, body #websites .component-container, body #websites .website-section-container {
+  margin-top: 20px;
+}
+body #components .component-container h2.component-container__title, body #components .website-section-container h2.component-container__title, body #websites .component-container h2.component-container__title, body #websites .website-section-container h2.component-container__title {
+  font-family: "Merriweather Sans", sans-serif;
+  text-align: center;
+}
+body #components .component-container p.component-container__text, body #components .website-section-container p.component-container__text, body #websites .component-container p.component-container__text, body #websites .website-section-container p.component-container__text {
+  font-family: "Nunito", sans-serif;
+  padding-top: 10px;
+}
+body #components .component-container .component-container__variant, body #components .website-section-container .component-container__variant, body #websites .component-container .component-container__variant, body #websites .website-section-container .component-container__variant {
+  margin-top: 40px;
+}
+body #components .component-container .component-container__variant h4.component-container__variant-title, body #components .website-section-container .component-container__variant h4.component-container__variant-title, body #websites .component-container .component-container__variant h4.component-container__variant-title, body #websites .website-section-container .component-container__variant h4.component-container__variant-title {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.2rem;
+}
+body #components .component-container .component-container__variant p.component-container__variant-text, body #components .website-section-container .component-container__variant p.component-container__variant-text, body #websites .component-container .component-container__variant p.component-container__variant-text, body #websites .website-section-container .component-container__variant p.component-container__variant-text {
+  font-family: "Nunito", sans-serif;
+  margin-top: 30px;
+}
+body #components .component-container img.component-container__variant-image, body #components .component-container img.website-section-container__image, body #components .website-section-container img.component-container__variant-image, body #components .website-section-container img.website-section-container__image, body #websites .component-container img.component-container__variant-image, body #websites .component-container img.website-section-container__image, body #websites .website-section-container img.component-container__variant-image, body #websites .website-section-container img.website-section-container__image {
+  display: block;
+  margin: 12px 0;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  body #components .component-container img.component-container__variant-image, body #components .component-container img.website-section-container__image, body #components .website-section-container img.component-container__variant-image, body #components .website-section-container img.website-section-container__image, body #websites .component-container img.component-container__variant-image, body #websites .component-container img.website-section-container__image, body #websites .website-section-container img.component-container__variant-image, body #websites .website-section-container img.website-section-container__image {
+    margin: 12px auto;
+  }
+  body #components .component-container img.component-container__variant-image.small-horizontal, body #components .component-container img.website-section-container__image.small-horizontal, body #components .website-section-container img.component-container__variant-image.small-horizontal, body #components .website-section-container img.website-section-container__image.small-horizontal, body #websites .component-container img.component-container__variant-image.small-horizontal, body #websites .component-container img.website-section-container__image.small-horizontal, body #websites .website-section-container img.component-container__variant-image.small-horizontal, body #websites .website-section-container img.website-section-container__image.small-horizontal {
+    max-width: 200px;
+  }
+  body #components .component-container img.component-container__variant-image.vertical, body #components .component-container img.website-section-container__image.vertical, body #components .website-section-container img.component-container__variant-image.vertical, body #components .website-section-container img.website-section-container__image.vertical, body #websites .component-container img.component-container__variant-image.vertical, body #websites .component-container img.website-section-container__image.vertical, body #websites .website-section-container img.component-container__variant-image.vertical, body #websites .website-section-container img.website-section-container__image.vertical {
+    max-width: 350px;
+  }
+}
+@media (min-width: 992px) {
+  body #components .component-container img.component-container__variant-image.small-horizontal, body #components .component-container img.website-section-container__image.small-horizontal, body #components .website-section-container img.component-container__variant-image.small-horizontal, body #components .website-section-container img.website-section-container__image.small-horizontal, body #websites .component-container img.component-container__variant-image.small-horizontal, body #websites .component-container img.website-section-container__image.small-horizontal, body #websites .website-section-container img.component-container__variant-image.small-horizontal, body #websites .website-section-container img.website-section-container__image.small-horizontal {
+    width: 35%;
+  }
+  body #components .component-container img.component-container__variant-image.vertical, body #components .component-container img.website-section-container__image.vertical, body #components .website-section-container img.component-container__variant-image.vertical, body #components .website-section-container img.website-section-container__image.vertical, body #websites .component-container img.component-container__variant-image.vertical, body #websites .component-container img.website-section-container__image.vertical, body #websites .website-section-container img.component-container__variant-image.vertical, body #websites .website-section-container img.website-section-container__image.vertical {
+    width: 45%;
+  }
+  body #components .component-container img.component-container__variant-image.horizontal, body #components .component-container img.website-section-container__image.horizontal, body #components .website-section-container img.component-container__variant-image.horizontal, body #components .website-section-container img.website-section-container__image.horizontal, body #websites .component-container img.component-container__variant-image.horizontal, body #websites .component-container img.website-section-container__image.horizontal, body #websites .website-section-container img.component-container__variant-image.horizontal, body #websites .website-section-container img.website-section-container__image.horizontal {
+    width: 80%;
+  }
+}

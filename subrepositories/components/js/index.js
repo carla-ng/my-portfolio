@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Show the navigation bar
-    var navbar = document.getElementById("navbar");
+    const navbar = document.getElementById("navbar");
     navbar.style.display = "block";
     
-  });
+});

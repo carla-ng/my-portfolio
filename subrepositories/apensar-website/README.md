@@ -22,4 +22,4 @@ Official website of the game [Apensar](https://play.google.com/store/apps/detail
 <br>
 
 ## :globe_with_meridians: Portfolio
-[https://carla-ng.github.io/my-portfolio/subrepositories/components/apensar-website.html](https://carla-ng.github.io/my-portfolio/subrepositories/components/apensar-website.html)
+[https://carla-ng.github.io/my-portfolio/subrepositories/apensar-website/apensar-website.html](https://carla-ng.github.io/my-portfolio/subrepositories/apensar-website/apensar-website.html)

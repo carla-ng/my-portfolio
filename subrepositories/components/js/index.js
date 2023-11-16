@@ -78,9 +78,9 @@ document.addEventListener('DOMContentLoaded', function() {
       const anchor = url.slice(anchorIndex); // Get the anchor part of the URL
       const targetItem = document.querySelector(`.navbar__menu li a[href="${anchor}"]`);
       
-      if ( targetItem ) {
-        targetItem.closest('li').classList.add('active');
-      }
+        if ( targetItem ) {
+            targetItem.closest('li').classList.add('active');
+        }
     } else {
         const firstElement = document.querySelectorAll('.navbar__menu li')[0];
         firstElement.classList.add('active');
@@ -97,6 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const lazyImage = entry.target;
                 lazyImage.src = lazyImage.dataset.src;
                 lazyImage.classList.remove('lazy-load');
+                lazyImage.classList.add('loaded');
                 imgObserver.unobserve(lazyImage);
             }
         });

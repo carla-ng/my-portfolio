@@ -231,9 +231,24 @@ body #components .component-container .component-container__variant p.component-
 }
 body #components .component-container img.component-container__variant-image, body #components .component-container img.website-section-container__image, body #components .website-section-container img.component-container__variant-image, body #components .website-section-container img.website-section-container__image, body #websites .component-container img.component-container__variant-image, body #websites .component-container img.website-section-container__image, body #websites .website-section-container img.component-container__variant-image, body #websites .website-section-container img.website-section-container__image {
   background-color: lightgrey;
-  display: block;
+  height: 300px;
   margin: 12px 0;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #components .component-container img.component-container__variant-image.lazy-load, body #components .component-container img.website-section-container__image.lazy-load, body #components .website-section-container img.component-container__variant-image.lazy-load, body #components .website-section-container img.website-section-container__image.lazy-load, body #websites .component-container img.component-container__variant-image.lazy-load, body #websites .component-container img.website-section-container__image.lazy-load, body #websites .website-section-container img.component-container__variant-image.lazy-load, body #websites .website-section-container img.website-section-container__image.lazy-load {
+  filter: blur(5px);
+  opacity: 0;
+  transform: scale(0.9);
+  transition: transform 0.3s ease-in-out;
+}
+body #components .component-container img.component-container__variant-image.loaded, body #components .component-container img.website-section-container__image.loaded, body #components .website-section-container img.component-container__variant-image.loaded, body #components .website-section-container img.website-section-container__image.loaded, body #websites .component-container img.component-container__variant-image.loaded, body #websites .component-container img.website-section-container__image.loaded, body #websites .website-section-container img.component-container__variant-image.loaded, body #websites .website-section-container img.website-section-container__image.loaded {
+  height: auto;
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(1);
 }
 @media (max-width: 992px) {
   body #components .component-container img.component-container__variant-image, body #components .component-container img.website-section-container__image, body #components .website-section-container img.component-container__variant-image, body #components .website-section-container img.website-section-container__image, body #websites .component-container img.component-container__variant-image, body #websites .component-container img.website-section-container__image, body #websites .website-section-container img.component-container__variant-image, body #websites .website-section-container img.website-section-container__image {

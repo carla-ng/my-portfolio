@@ -250,9 +250,27 @@ body {
 
             img.component-container__variant-image, img.website-section-container__image {
                 background-color: lightgrey;
-                display: block;
+                height: 300px;
                 margin: 12px 0;
                 width: 100%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &.lazy-load {
+                    filter: blur(5px);
+                    opacity: 0;
+                    transform: scale(0.9);
+                    transition: transform 0.3s ease-in-out;
+                }
+                
+                &.loaded {
+                    height: auto;
+                    filter: blur(0);
+                    opacity: 1;
+                    transform: scale(1);
+                }
 
                 @media (max-width: $breakpoint-tablet-min-width) {
                     margin: 12px auto;

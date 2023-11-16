@@ -164,7 +164,6 @@ body #navbar .navbar__inner-container .navbar__menu ul li a {
   letter-spacing: 1px;
   text-decoration: none;
   white-space: nowrap;
-  width: 100%;
 }
 body #navbar .navbar__inner-container .navbar__menu ul li.active {
   background-color: #fff;

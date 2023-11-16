@@ -4,8 +4,8 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
+html, body {
+  scroll-behavior: auto;
 }
 
 body {

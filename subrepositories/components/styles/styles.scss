@@ -10,8 +10,8 @@ $breakpoint-max-width: 992px;
 	padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
+html, body {
+    scroll-behavior: auto;
 }
 
 body {

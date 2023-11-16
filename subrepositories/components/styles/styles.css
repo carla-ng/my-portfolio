@@ -11,7 +11,7 @@ html, body {
 body {
   display: flex;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   body {
     flex-direction: column;
   }
@@ -33,7 +33,7 @@ body #navbar.open {
   right: 0;
   width: 100%;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   body #navbar.open .navbar__inner-container {
     flex-direction: column;
   }
@@ -54,7 +54,7 @@ body #navbar.open {
     order: 3;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   body #navbar:not(.open) {
     border-radius: 50%;
     height: 95px;
@@ -67,12 +67,18 @@ body #navbar.open {
     right: 22px;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   body #navbar {
     bottom: 0;
     height: 100%;
-    padding: 30px 0 30px 30px;
+    padding: 30px 0 30px 10px;
     right: 0;
+    width: 27%;
+  }
+}
+@media (min-width: 1200px) {
+  body #navbar {
+    padding: 30px 0 30px 30px;
     width: 21%;
   }
 }
@@ -81,12 +87,12 @@ body #navbar .navbar__inner-container {
   overflow-x: hidden;
   overflow-y: scroll;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   body #navbar .navbar__inner-container {
     display: flex;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   body #navbar .navbar__inner-container {
     margin-right: -17px;
     padding-right: 17px;
@@ -99,7 +105,7 @@ body #navbar .navbar__inner-container::-webkit-scrollbar {
 body #navbar .navbar__inner-container .navbar__main {
   display: flex;
 }
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   body #navbar .navbar__inner-container .navbar__main {
     padding: 0 25px;
   }
@@ -112,7 +118,7 @@ body #navbar .navbar__inner-container .navbar__main .navbar__logo {
   text-decoration: none;
   white-space: nowrap;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   body #navbar .navbar__inner-container .navbar__main .navbar__logo {
     display: none;
   }
@@ -123,20 +129,20 @@ body #navbar .navbar__inner-container .navbar__main #navbar-hamburger {
   font-size: 1.5rem;
   text-align: center;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   body #navbar .navbar__inner-container .navbar__main #navbar-hamburger {
     position: absolute;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   body #navbar .navbar__inner-container .navbar__main #navbar-hamburger {
     display: none;
   }
 }
 body #navbar .navbar__inner-container .navbar__menu {
-  padding: 20px 0;
+  padding: 20px 0 40px 0;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   body #navbar .navbar__inner-container .navbar__menu {
     display: none;
   }
@@ -167,13 +173,18 @@ body #navbar .navbar__inner-container .navbar__menu ul li.active {
 body #navbar .navbar__inner-container .navbar__menu ul li.active a {
   color: rgb(109, 109, 248);
 }
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   body #navbar .navbar__inner-container .navbar__menu ul li.active {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 992px) {
+  body #main {
+    margin-left: 29%;
+  }
+}
+@media (min-width: 1200px) {
   body #main {
     margin-left: 26%;
   }
@@ -225,7 +236,7 @@ body #components .component-container img.component-container__variant-image, bo
   margin: 12px 0;
   width: 100%;
 }
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   body #components .component-container img.component-container__variant-image, body #components .component-container img.website-section-container__image, body #components .website-section-container img.component-container__variant-image, body #components .website-section-container img.website-section-container__image, body #websites .component-container img.component-container__variant-image, body #websites .component-container img.website-section-container__image, body #websites .website-section-container img.component-container__variant-image, body #websites .website-section-container img.website-section-container__image {
     margin: 12px auto;
   }
@@ -236,7 +247,7 @@ body #components .component-container img.component-container__variant-image, bo
     max-width: 350px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 991px) {
   body #components .component-container img.component-container__variant-image.small-horizontal, body #components .component-container img.website-section-container__image.small-horizontal, body #components .website-section-container img.component-container__variant-image.small-horizontal, body #components .website-section-container img.website-section-container__image.small-horizontal, body #websites .component-container img.component-container__variant-image.small-horizontal, body #websites .component-container img.website-section-container__image.small-horizontal, body #websites .website-section-container img.component-container__variant-image.small-horizontal, body #websites .website-section-container img.website-section-container__image.small-horizontal {
     width: 35%;
   }

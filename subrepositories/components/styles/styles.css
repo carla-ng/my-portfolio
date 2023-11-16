@@ -220,6 +220,7 @@ body #components .component-container .component-container__variant p.component-
   margin-top: 30px;
 }
 body #components .component-container img.component-container__variant-image, body #components .component-container img.website-section-container__image, body #components .website-section-container img.component-container__variant-image, body #components .website-section-container img.website-section-container__image, body #websites .component-container img.component-container__variant-image, body #websites .component-container img.website-section-container__image, body #websites .website-section-container img.component-container__variant-image, body #websites .website-section-container img.website-section-container__image {
+  background-color: lightgrey;
   display: block;
   margin: 12px 0;
   width: 100%;

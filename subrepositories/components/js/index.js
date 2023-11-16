@@ -65,6 +65,11 @@ window.addEventListener('resize', function() {
 // Wait until content has loaded
 document.addEventListener('DOMContentLoaded', function() {
 
+    // Show the navigation bar
+    const navbar = document.getElementById("navbar");
+    navbar.style.display = "block";
+
+
     // Check if there is an anchor in the URL when the page loads
     const url = window.location.href;
     const anchorIndex = url.indexOf('#');
@@ -78,8 +83,22 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
 
-    // Show the navigation bar
-    const navbar = document.getElementById("navbar");
-    navbar.style.display = "block";
     
+    // Lazy load images
+    const lazyLoadImages = document.querySelectorAll('.lazy-load');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if ( entry.isIntersecting ) {
+                const lazyImage = entry.target;
+                lazyImage.src = lazyImage.dataset.src;
+                lazyImage.classList.remove('lazy-load');
+                observer.unobserve(lazyImage);
+            }
+        });
+    });
+
+    lazyLoadImages.forEach(image => {
+        observer.observe(image);
+    });
 });
